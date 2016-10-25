@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+section{
+	background-image:url(../img/fondo.png);
+	background-repeat: repeat;
+	background-size: cover;
+	height: 85vh;
+	position: relative;
+}
+.logo{
+	margin-top: 30%;	
+}
+.sesion,.registro{
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.btn-default {
+    padding: 20px 30px;
+    line-height: 1.3333333;
+    border-radius: 0px;
+    margin-top: 8%;
+    border: 2px solid black;
+}
+.registro{
+	background-color: black;
+	color:#fff;
+}
+.botones{
+	width: 100vw;
+	height: 100vh;
+}
+.form-control:focus {
+   	outline: -webkit-focus-ring-color auto 0px;
+ 	outline-style: none;
+    box-shadow: none;
+    border-color: lightgrey;
+}
