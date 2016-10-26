@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/mapa.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="userView">
+                <img class="background" src="img/fondo-perfil.jpg">
+                <a href="#!user"><img class="circle" src="img/perfil.png"></a>
+                <a class="name" href="#!name"><span class="white-text name">Lili Hualtibamba Pérez</span></a>
+            </div>
+        </li>
+        <li class="lista-top"><a href="#"><span class="icon-credit-card"></span><span class="opciones">Pago</span></a></li>
+        <li class="lista"><a href="#"><span class="icon-stats-dots"></span><span class="opciones">Viajes</span></a></li>
+        <li class="lista"><a href="#"><span class="icon-share2"></span><span class="opciones">Viajes gratis</span></a></li>
+        <li class="lista"><a href="#"><span class="icon-svg"></span><span class="opciones">Promociones</span></a></li>
+        <li class="lista"><a href="#"><span class="icon-bell"></span><span class="opciones">Notificaciones</span></a></li>
+        <li class="lista"><a href="#"><span class="icon-lifebuoy"></span><span class="opciones">Ayuda</span></a></li>
+        <li class="lista"><a href="#"><span class="icon-meter2"></span><span class="opciones">Conduce con Uber</span></a></li>
+        <li class="lista"><a href="#"><span class="icon-cog"></span><span class="opciones">Configuración</span></a></li>
+        <li class="lista"><div class="divider"></div></li>
+        <li class="lista"><a class="waves-effect" href="#!"><span class="color">Quiénes somos</span></a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    <div id= "mapa"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPB60PwXxrWJeR-ykF5pfNK9K90Ud68Y0" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

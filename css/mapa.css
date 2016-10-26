@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#mapa{
+	width: 100vw;
+	height: 100vh;
+}
+.iconos{
+	width: 40px;
+	height: 40px;
+}
+.opciones{
+	margin-left: 10%;
+}
+.text{
+	color:#fff;
+}
+.side-nav a {
+	font-size: 19px;
+	margin-left: 3%; 
+}
+.side-nav{
+	background-color: #0C0D17;
+}
+.opciones{
+	display: inline-block;
+	color: #fff;
+	font-family: Arial;
+}
+.color{
+	color:#A4A4A4;
+	font-family: Arial;
+	font-size: 18px;
+}
+.divider{
+	margin-bottom: 3%;
+	background-color: #585858;
+}
+.lista{
+	margin-top: 2%;
+}
+.lista-top{
+	margin-top: 8%;
+}
