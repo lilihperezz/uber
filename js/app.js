@@ -1,20 +1,25 @@
 $(document).ready(function() {
-	
+	$("#prueba").click(apareceContenido);
+	$('.modal-trigger').leanModal();
+    $('.button-collapse').sideNav({
+     	menuWidth: 285,
+      	edge: 'left', 
+      	closeOnClick: true 
+    });
 });
 
- $('.button-collapse').sideNav({
-      menuWidth: 285,
-      edge: 'left', 
-      closeOnClick: true 
-    }
-  );
+function apareceContenido(evento){
+	$("#conten-partida").addClass("desaparece");
+	$("#conten-llegada").removeClass("desaparece");
+	}
+
 var divMapa= document.getElementById("mapa");
 navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
 function fn_mal(){}
 function fn_ok(rta){
 	var lat = rta.coords.latitude;
 	var lon = rta.coords.longitude;
-
+	
 	var gLatLon = new google.maps.LatLng( lat , lon );
 	var objConfig = {
 		zoom: 12,
@@ -34,7 +39,7 @@ function fn_ok(rta){
 		gCoder.geocode(objInformacion ,fn_coder);
 
 		function fn_coder(datos){
-			var coordenadas = datos[0].geometry.location; //obj LatLong
+			var coordenadas = datos[0].geometry.location; 
 			var config = {
 				map: gMapa,
 				position: coordenadas,
@@ -42,7 +47,6 @@ function fn_ok(rta){
 			}
 			var gMarkerDV = new google.maps.Marker( config)
 		}
-		//var gIW = new google.maps.InfoWindow(objHTML);
 		var objConfigDR = {
 			map:gMapa
 		}

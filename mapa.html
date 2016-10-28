@@ -15,8 +15,8 @@
         <li>
             <div class="userView">
                 <img class="background" src="img/fondo-perfil.jpg">
-                <a href="#!user"><img class="circle" src="img/perfil.png"></a>
-                <a class="name" href="#!name"><span class="white-text name">Lili Hualtibamba Pérez</span></a>
+                <a href="#"><img class="circle" src="img/perfil.png"></a>
+                <a class="name" href="#"><span class="white-text name">Lili Hualtibamba Pérez</span></a>
             </div>
         </li>
         <li class="lista-top"><a href="#"><span class="icon-credit-card"></span><span class="opciones">Pago</span></a></li>
@@ -30,9 +30,41 @@
         <li class="lista"><div class="divider"></div></li>
         <li class="lista"><a class="waves-effect" href="#!"><span class="color">Quiénes somos</span></a></li>
     </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
+    <div class="titulo">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons menu">menu</i></a>
+        <p class="center-align logo">UBER</p>
+    </div>
+    <section class="container">
+        <div id="conten-partida"> 
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <p class="text-partida">PUNTO DE PARTIDA</p>
+                    <input name="ubicacion" id="ubicacion-partida" type="text" required class="form-control" placeholder="Ir al marcador">
+                    <i class="small material-icons search">search</i>
+                </div>
+            </div>
+        </div>
+        <div id="conten-llegada" class="desaparece">
+            <div class="caja1">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <img class="punto" src="img/punto.png" alt="punto">
+                        <input name="ubicacion" id="ubicacion-partida" type="text" required class="form-control" placeholder=" Avenida Jose Galvez 432">              
+                    </div>
+                </div>
+            </div>
+            <div class="caja2">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <input name="ubicacion-llegada" id="ubicacion-llegada" type="text" required class="form-control" placeholder="Se requiere un destino"> 
+                        <i class="small material-icons search2">search</i> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div id= "mapa"></div>
+    <button id="prueba">Boton-Prueba</button>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPB60PwXxrWJeR-ykF5pfNK9K90Ud68Y0" async defer></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/sweetalert.min.js"></script>
