@@ -12,10 +12,6 @@ body {
 	width: 100vw;
 	height: 100vh;
 }
-.iconos{
-	width: 40px;
-	height: 40px;
-}
 .opciones{
 	margin-left: 10%;
 }
@@ -49,98 +45,56 @@ body {
 .lista-top{
 	margin-top: 8%;
 }
-.menu{
-	color: black;
-	margin-left: 5%;
-	font-size: 30px;
-	position: absolute;
-	top: 2%;
-}
 .titulo{
-	border-bottom: 1px solid #6E6E6E;
-}
-.logo{
+	text-align: center;
 	font-size: 2em;
 	font-family: monospace;
 	font-weight: bold;
-	top:0%;
-	left: 43%;
-	padding: 2% 0%;
+	border-bottom: 1px solid #6E6E6E;
+	margin-top: 3%;
+}
+.menu{
+	color: black;
+	position: absolute;
+	font-size: 30px;
+	top: 2%;
+	left: 2%;
 }
 #conten-partida{
-	border: 1px solid #6E6E6E;
-	top: 10%;
+	border:1px solid #6E6E6E;
 	position: absolute;
 	z-index: 100;
-	background-color: #fff;
-	width: 90vw;
-	height: 16vw;
+	background-color:#fff;
+	width: 90%;
+	top:10%;
 }
-.caja1{
-	width: 90vw;
-	position: absolute;
-	z-index: 100;
-	border: 1px solid #6E6E6E;
-	background-color: #fff;
-	top: 10%;
-	height: 9vh;
-	padding:3% 0%;
-	border-bottom: transparent;
+.conten-icon{
+	border:1px solid blue;
+	margin-top: 30%;
+	margin-left: 10%;
 }
-.caja2{
-	width: 90vw;
-	position: absolute;
-	z-index: 100;
-	border: 1px solid #6E6E6E;
-	background-color: #fff;
-	top: 18%;
-	height: 8vh;
-	padding:3% 0%;
+.search{
+	color:gray;
+}
+.conten-inputpartida{
+	border:1px solid green;
 }
 .text-partida{
-	text-align: center;	
+	text-align: center;
 	color:#088A08;
 	font-size: 0.9em;
 	font-weight: bold;
 	margin-top: 2%;
 }
-#ubicacion-partida,#ubicacion-llegada{
-	font-size: 1.3em; 
+#ubicacion-partida{
 	text-align: center;
-	word-wrap: break-word;
-	margin:0%;
-	border:transparent;
-	width: 80%;
-	margin-left: 10%;
-	color: black;
-	height: 4vh;
+	font-size: 1.2em;
+	font-weight: bold;
 }
-.search{
-	position: absolute;
-	left:3%;
-	color:gray;
-	top: 30%;
+
+input[type=text]{
+	margin-bottom: 0px;
 }
-.search2{
-	position: absolute;
-	left:3%;
-	color:gray;
-	top: 30%;
-}
-.punto{
-	left:3%;
-	position: absolute;
-}
-.form-control:focus {
-   	outline: -webkit-focus-ring-color auto 0px;
- 	outline-style: none;
-    box-shadow: none;
-    border-color: lightgrey;
-}
-#prueba{
-	position: absolute;
-	bottom: : 0;
-}
-.desaparece{
-	display:none;
+.sm{
+	margin: 0px;
 }
