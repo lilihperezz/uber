@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#prueba").click(apareceContenido);
+	$("#btn-prueba").click(contenido);
 	$('.modal-trigger').leanModal();
     $('.button-collapse').sideNav({
      	menuWidth: 285,
@@ -8,10 +8,17 @@ $(document).ready(function() {
     });
 });
 
-function apareceContenido(evento){
-	$("#conten-partida").addClass("desaparece");
-	$("#conten-llegada").removeClass("desaparece");
-	}
+	
+function contenido(evento){
+	$("#conten-partida").addClass("ocultar");
+	$("#conten-llegada").removeClass("ocultar");
+	$(".titulo").text("Confirmación");
+	$(".menu").addClass("ocultar");
+	$("#icon").removeClass("ocultar");
+	$("#conten-ubers").addClass("ocultar");
+	$("#conten-pedido").removeClass("ocultar");
+	$("#btn-prueba").addClass("ocultar");
+}
 
 var divMapa= document.getElementById("mapa");
 navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);

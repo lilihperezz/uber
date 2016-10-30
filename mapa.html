@@ -31,16 +31,15 @@
         <li class="lista"><a class="waves-effect" href="#!"><span class="color">Quiénes somos</span></a></li>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons menu">menu</i></a>
+    <a href="mapa.html"><span class="icon-arrow-left2 ocultar" id="icon"></span></a>
     <p class= titulo>UBER<p>
     <div class="container">
         <div id="conten-partida">
             <div class="row sm">
-                <div class="col s2 m2 l2">
-                    <div class="conten-icon">
-                        <i class="small material-icons search">search</i>
-                    </div>
+                <div class="col s1 m1 l1">
+                    <i class="small material-icons search">search</i>                    
                 </div>
-                <div class="col s10 m2 l2">
+                <div class="col s11 m11 l11">
                     <div class="conten-inputpartida center">
                         <p class="text-partida">PUNTO DE PARTIDA</p>
                         <input name="ubicacion" id="ubicacion-partida" type="text" required class="form-control" placeholder="Ir al marcador">
@@ -48,9 +47,99 @@
                 </div>
             </div>
         </div>
+        <div id="conten-llegada" class="ocultar">
+            <div class="conten-1"> 
+                <div class="row sm">
+                    <div class="col s1 m1 l1">
+                        <img class="punto" src="img/punto.png" alt="punto">
+                    </div>
+                    <div class="col s11 m11 l11">
+                        <div class="conten-avenida">Av.Mariano Pastor Sevilla</div>
+                    </div>
+                  </div>         
+            </div>
+            <div class="conten-2">
+                <div class="row sm">
+                    <div class="col s1 m1 l1">
+                        <i class="small material-icons search2">search</i>
+                    </div>
+                    <div class="col s11 m11 l11">
+                        <input name="ubicacion-llegada" id="ubicacion-llegada" type="text" required class="form-control" placeholder="Se requiere un destino">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="conten-ubers">
+            <div class="row sm">
+                <div class="col s4 m4 l4">
+                    <div class="conten-x">
+                        <p class=" text-x">uberX</p>
+                        <div class="conten-carro">
+                            <img class="circle carro" src="img/carro.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 m4 l4">
+                    <div class="conten-b">
+                        <p class="text-b">uberBLACK</p>
+                    </div>
+                </div>
+                <div class="col s4 m4 l4">
+                    <div class="conten-bi">
+                        <p class="text-bi">uberBICI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="conten-pedido" class="ocultar">
+            <div class="conten-efectivo">
+                <div class="row sm">
+                    <div class="col s4 m4 l4">
+                        <a class="waves-effect waves-light btn" href="#">ESTIMACIÓN ...</a>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <a class="btn modal-trigger" href="#modal1">
+                        <i class="medium material-icons person">perm_identity</i> 1<i class="large material-icons flecha">play_for_work</i></a>
+                        <div id="modal1" class="modal bottom-sheet">
+                            <div class="modal-content">
+                                <h6><b>¿CUÁNTOS ASIENTOS NECESITAS?</b></h6>
+                                <p>1 asiento</p>
+                                <p>2 asientos</p>
+                                <p>3 asientos</p>
+                                <p>4 asientos</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col s4 m4 l4">
+                    <a class="waves-effect waves-light btn" href="#"><i class="material-icons left">payment</i>EFECTIVO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="conten-pool">
+                <div class="row sm">
+                    <div class="col s12 m12 l12">
+                        <a class="waves-effect waves-light btn-pedir">PEDIR UBERX</a>
+                        <p class="text-espera">EL TIEMPO APROXIMADO DE ESPERA ES DE 5 MINUTOS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <a id="btn-prueba">
+    <div class="preloader-wrapper small active">
+        <div class="spinner-layer spinner-white-only">
+            <div class="circle-clipper left">
+                <div class="circle">5</div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
     </div>
-
-
+    <p class="text-market">FIJA EL PUNTO DE PARTIDA</p><span class="icon-circle-right time"></span></a>
     <div id= "mapa"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPB60PwXxrWJeR-ykF5pfNK9K90Ud68Y0" async defer></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
